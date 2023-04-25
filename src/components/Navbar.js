@@ -13,25 +13,13 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                <Link className="nav-link" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">{props.about}</Link>
               </li>
               
             </ul>
-            <div className={`form-check mx-2 form-switch text-${props.mode==='light'?'dark':'light'}`}>
-              <input className="form-check-input" type="checkbox" role="switch" onClick={props.toggleMode1} id="flexSwitchCheckDefault1"/>
-              <label className="form-check-label" htmlFor="flexSwitchCheckDefault1">Yellow mode</label>
-            </div>
-            <div className={`form-check mx-2 form-switch text-${props.mode==='light'?'dark':'light'}`}>
-              <input className="form-check-input" type="checkbox" role="switch" onClick={props.toggleMode2} id="flexSwitchCheckDefault2"/>
-              <label className="form-check-label" htmlFor="flexSwitchCheckDefault2">Red mode</label>
-            </div>
-            <div className={`form-check mx-2 form-switch text-${props.mode==='light'?'dark':'light'}`}>
-              <input className="form-check-input" type="checkbox" role="switch" onClick={props.toggleMode3} id="flexSwitchCheckDefault3"/>
-              <label className="form-check-label" htmlFor="flexSwitchCheckDefault3">Green mode</label>
-            </div>
             <div className={`form-check mx-2 form-switch text-${props.mode==='light'?'dark':'light'}`}>
               <input className="form-check-input" type="checkbox" role="switch" onClick={props.toggleMode} id="flexSwitchCheckDefault4"/>
               <label className="form-check-label" htmlFor="flexSwitchCheckDefault4">Dark mode</label>
